@@ -1,0 +1,25 @@
+<div class="container2">
+    <h2>New Form</h2>
+    <div
+      cdkDropList
+      [cdkDropListData]="dataArray"
+      class="example-list"
+      (cdkDropListDropped)="drop($event)"
+    >
+      <div
+        class="example-box"
+        *ngFor="let item of dataArray; let i = index"
+        cdkDrag
+      >
+      <table class="table">
+        <tbody>
+          <tr>
+            <th scope="row">{{i+1}}</th>
+            <td>{{item.field}}</td>
+          </tr>
+          
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </div>

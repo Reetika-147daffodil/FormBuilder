@@ -1,0 +1,12 @@
+<div class="container">
+    <h2>Fields</h2>
+    <div
+      cdkDropList
+      [cdkDropListData]="basic_Components"
+      class="example-list"
+    >
+      <div class="example-box" *ngFor="let item of basic_Components" cdkDrag>
+        {{ item.field }}
+      </div>
+    </div>
+</div>
